@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Despesas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora de Despesas</h1>
+            <p>Compare as despesas entre o iFood Full Service e o Seu Modelo</p>
+        </header>
+        <form id="calculator">
+            <div class="input-group">
+                <label for="faturamento">Faturamento Mensal Estimado:</label>
+                <input type="number" id="faturamento" required>
+            </div>
+
+            <div class="input-group">
+                <label for="ifoodMachine">Uso de Máquina do iFood:</label>
+                <input type="checkbox" id="ifoodMachine">
+            </div>
+
+            <div class="input-group">
+                <label for="freeDelivery">Oferta de Entrega Gratuita:</label>
+                <input type="checkbox" id="freeDelivery">
+            </div>
+
+            <div class="input-group">
+                <label for="subsidy">Percentual de Uso do Subsídio (12%):</label>
+                <input type="number" id="subsidy">
+            </div>
+
+            <button type="button" id="calculateButton">Calcular</button>
+
+            <div class="results">
+                <h2>Resultados:</h2>
+                <p>Despesa Total com iFood Full Service: <span id="ifoodExpense">0</span></p>
+                <p>Despesa Total com o Seu Modelo: <span id="yourModelExpense">0</span></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
